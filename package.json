@@ -1,0 +1,31 @@
+{
+  "name": "bucket-list-package",
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+        "./app": "./dist/app.js",
+        "./*": "./dist/*"
+    },
+  "repository": "https://github.com/hfagerlund/bucket-list-app.git",
+  "author": "Heini Fagerlund",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/jasmine": "^5.1.8",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.0.10",
+    "http-server": "^14.1.1",
+    "jasmine": "^5.8.0",
+    "jsdom": "22.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "clean": "[ 'tsconfig.tsbuildinfo' ] && rm tsconfig.tsbuildinfo",
+    "compile": "rm -rf ./dist && tsc",
+    "test": "jasmine --config=./spec/support/jasmine.mjs",
+    "watch": "tsc --w"
+  },
+  "dependencies": {
+    "typescript": "5.8.3"
+  }
+}

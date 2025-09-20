@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bucket List App</title>
+  <script src="app_browser.js" defer></script>
+  <link rel="stylesheet" href="css/gui.css" type="text/css">
+</head>
+
+<body>
+
+<form id="todo-form" action="#" method="post" accept-charset="utf-8">
+  <fieldset>
+  <legend>New ToDo</legend>
+    <label for="todo" class="visually-hidden">Enter a new to-do item:</label>
+    <input type="text" name="todo_item" id="todo">
+    <input type="submit" name="create_todo" id="create" class="btn" aria-label="Add something to the list" value="+">
+   </fieldset>
+</form>
+
+  <h2 class="the_list">Things to get done</h2>
+  <ol id="todo_list">
+  </ol>
+
+</body>
+</html>
+
